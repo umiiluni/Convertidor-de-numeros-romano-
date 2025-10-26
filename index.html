@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertidor de Números Romanos</title>
+  <style>
+    body { font-family: 'Poppins', sans-serif; text-align: center; background: #fce4ec; color: #333; padding: 50px; }
+    h1 { color: #d81b60; }
+    input, button { padding: 10px; margin: 10px; border-radius: 10px; border: 2px solid #d81b60; }
+    button { background: #d81b60; color: white; cursor: pointer; }
+    button:hover { background: #ad1457; }
+    #resultado { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Convertidor de Números Romanos ↔ Comunes</h1>
+  <p>Creado por <strong>Uma Rovetta</strong> | Instituto <strong>Bernardo Houssay</strong><br>
+  Materia: <strong>Diseños y Arquitecturas de Despliegues</strong></p>
+
+  <div>
+    <h2>Romano → Común</h2>
+    <input type="text" id="romano" placeholder="Ej: XIV">
+    <button onclick="convertirARomano()">Convertir</button>
+    <p id="resultadoRomano"></p>
+  </div>
+
+  <hr>
+
+  <div>
+    <h2>Común → Romano</h2>
+    <input type="number" id="numero" placeholder="Ej: 2025">
+    <button onclick="convertirAComunes()">Convertir</button>
+    <p id="resultadoNumero"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
